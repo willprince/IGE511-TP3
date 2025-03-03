@@ -56,8 +56,11 @@ body, html {
 .search-container input[type="text"] {
     padding: 5px;
     margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border:none
+}
+
+.search-input {
+    background-color: white;
 }
 
 .search-container button {
@@ -98,6 +101,10 @@ body, html {
 
 .author-name {
     margin-right: 20px; /* Ajoute un espace entre le nom de l'auteur et le bouton */
+}
+
+.full-w {
+    width: 100%;
 }
 
 .footer {
