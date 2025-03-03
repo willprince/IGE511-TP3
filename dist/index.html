@@ -1,0 +1,109 @@
+<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Interface Adaptative</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"><link rel="stylesheet" href="CSS/styles.css"><style>body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-container {
+            background-color: #808080; /* Gris */
+            width: 100%;
+            text-align: center;
+        }
+        .nav-content {
+            display: flex;
+            justify-content: center; /* Centrer horizontalement */
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            color: black; /* Change la couleur du texte LOGO en noir */
+            font-size: 1.5rem;
+            margin-bottom: 10px; /* Ajoute un espace entre le logo et les liens de navigation */
+        }
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+        }
+        .search-container input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-container button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: calc(100vh - 200px); /* Ajuste la hauteur minimale pour éviter que le pied de page soit trop en bas */
+        }
+        .article-footer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .article-footer i {
+            margin-right: 5px;
+        }
+        .date {
+            margin-right: 20px; /* Ajoute un espace entre la date et le nom de l'auteur */
+        }
+        .author-name {
+            margin-right: 20px; /* Ajoute un espace entre le nom de l'auteur et le bouton */
+        }
+        .footer {
+            background-color: #808080; /* Gris */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .section-spacing {
+            margin-top: 40px;
+        }
+        .read-more-btn {
+            background-color: #808080;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .read-more-btn:hover {
+            background-color: #404040;
+        }</style><script defer="defer" src="bundle.js"></script></head><body><nav class="nav-container"><span class="logo">LOGO</span><div class="nav-content"><ul class="nav-links"><li><a href="#">Accueil</a></li><li><a href="#">Blogue</a></li><li><a href="#">À propos</a></li><li><a href="#">Nous joindre</a></li></ul></div></nav><div class="search-container"><input placeholder="Recherche..."> <button type="button"><i class="fas fa-search"></i> Recherche</button></div><main class="container mt-4 main-content"><section class="row"><article class="col-md-6"><h2>Titre de L'article</h2><p>Lorem ipsum dolor sit amet,consectelur adipiscing elit. Donec lacinia,velit eu porta tincidut,risus turpis consequant nunc, in tempus ex a,semper quam. Phasellus in magna nec purus consequat molestie ut dictum nisl.</p><p>Donec odio metus, fringilla eget tortor viverra, molestie porttitor augue. Nam vitae ultrices eros. Praesent nisi sapien, pharetra et lobortis viverra,consectelur sit amet est. Suspendisse feugiat egestas justo sit amet interdum. Vivamus neque felis,auctor id sollicitudin id, vulpulate et tortor. Mauris venenatis laoreet elit nec convalis.</p><div class="article-footer"><i class="fas fa-calendar-alt"></i><span class="date">26 février 2025</span> <i class="fas fa-user"></i><span class="author-name">Nom de l'auteur</span> <button class="read-more-btn">Lire la suite</button></div></article></section><section class="row section-spacing"><article class="col-md-6"><h2>Titre de L'article</h2><p>Lorem ipsum dolor sit amet,consectelur adipiscing elit. Donec lacinia,velit eu porta tincidut,risus turpis consequant nunc, in tempus ex a,semper quam. Phasellus in magna nec purus consequat molestie ut dictum nisl.</p><p>Donec odio metus, fringilla eget tortor viverra, molestie porttitor augue. Nam vitae ultrices eros. Praesent nisi sapien, pharetra et lobortis viverra,consectelur sit amet est. Suspendisse feugiat egestas justo sit amet interdum. Vivamus neque felis,auctor id sollicitudin id, vulpulate et tortor. Mauris venenatis laoreet elit nec convalis.</p><div class="article-footer"><i class="fas fa-calendar-alt"></i><span class="date">26 février 2025</span> <i class="fas fa-user"></i><span class="author-name">Nom de l'auteur</span> <button class="read-more-btn">Lire la suite</button></div></article></section></main><footer class="footer text-white text-center p-3"><p>&copy; Nom du blogue - Tous droits réservés</p><p>credits agence web</p></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script><script src="js/script.js"></script></body></html>

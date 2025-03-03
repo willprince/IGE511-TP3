@@ -1,0 +1,155 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    background-color: #808080; /* Gris */
+    width: 100%;
+    text-align: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    color: black; /* Change la couleur du texte LOGO en noir */
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Ajoute un espace entre le logo et les liens de navigation */
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 200px); /* Ajuste la hauteur minimale pour éviter que le pied de page soit trop en bas */
+}
+
+.article-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.article-footer i {
+    margin-right: 5px;
+}
+
+.date {
+    margin-right: 20px; /* Ajoute un espace entre la date et le nom de l'auteur */
+}
+
+.author-name {
+    margin-right: 20px; /* Ajoute un espace entre le nom de l'auteur et le bouton */
+}
+
+.footer {
+    background-color: #808080; /* Gris */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.section-spacing {
+    margin-top: 40px;
+}
+
+.read-more-btn {
+    background-color: #808080;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #404040;
+}
+
+/* Media Queries pour rendre l'interface adaptative */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container input[type="text"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
