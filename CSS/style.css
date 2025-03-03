@@ -129,8 +129,21 @@ body, html {
     background-color: #404040;
 }
 
+#nav-mobile {
+    display: none;
+}
+
 /* Media Queries pour rendre l'interface adaptative */
 @media (max-width: 768px) {
+
+    #nav-mobile {
+        display: block;
+    }
+
+    #nav-desktop {
+        display: none;
+    }
+
     .nav-content {
         flex-direction: column;
         align-items: center;
