@@ -5,6 +5,32 @@ body, html {
     flex-direction: column;
 }
 
+main{
+    margin: 2rem 8rem;
+}
+
+/* right col go on top when mobile */
+.main-grid-2-cols {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 1 colonne de 1/4 et 1 colonne de 3/4 */
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    /* reverse item order */
+    .main-grid-2-cols {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+}
+
+.main-grid-item {
+    padding: 20px;
+}
+
+w-full{
+    width: 100%;
+}
+
 .nav-container {
     background-color: #808080; /* Gris */
     width: 100%;
@@ -16,6 +42,30 @@ body, html {
     justify-content: center; /* Centrer horizontalement */
     align-items: center;
     padding: 10px 20px;
+}
+
+.info-card{
+    background-color: #f8f9fa; /* Gris clair */
+    width: 100%;
+    margin-top:1rem;
+    padding: 2rem;
+}
+
+#cat-card{
+    margin-top: 1rem;
+    background-color: #f8f9fa; /* Gris clair */
+    padding:1rem
+}
+
+/* remove margin ul li
+ */
+ul{
+    margin:1.25rem;
+    padding:0;
+}
+
+.info-card:first-child{
+    margin-top:0;
 }
 
 .nav-links {
@@ -44,6 +94,8 @@ body, html {
     font-size: 1.5rem;
     margin-bottom: 10px; /* Ajoute un espace entre le logo et les liens de navigation */
 }
+
+
 
 .search-container {
     display: flex;
@@ -145,10 +197,6 @@ body, html {
 
     #nav-mobile {
         display: block;
-    }
-
-    #nav-desktop {
-        display: none;
     }
 
     .nav-content {

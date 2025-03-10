@@ -23,12 +23,62 @@
     </nav>
     
     <div id="nav-mobile" class="search-container">
-        <input type="text" placeholder="Recherche...">
-        <button type="button"><i class="fas fa-search"></i> Recherche</button>
+        <div id="nav-desktop" class="col-md-6">
+            <div class="search-container full-w">
+                <div class="search-input full-w" style="display: flex; justify-content: space-between; align-items: center;">
+                    <input class="" type="text" placeholder="Recherche...">
+                    <i class="fas fa-search" style="margin-right: 10px;"></i> 
+                </div>
+            </div>
+        </div>
     </div>
     
-    <main class="container mt-4 main-content">
-        <section class="row">
+    <main class="main-grid-2-cols">
+        <section  class="main-grid-item">
+            <article class="info-card col-md-6">
+                <h2>Titre de L'article</h2>
+                <p>Lorem ipsum dolor sit amet,consectelur adipiscing elit. Donec lacinia,velit eu porta tincidut,risus turpis consequant nunc, in tempus ex a,semper quam. Phasellus in magna nec purus consequat molestie ut dictum nisl.</p>
+                <p> Donec odio metus, fringilla eget tortor viverra, molestie porttitor augue. Nam vitae ultrices eros. Praesent nisi sapien, pharetra et lobortis viverra,consectelur sit amet est. Suspendisse feugiat egestas juste sit amet interdum. Vivamus neque felis,auctor id sollicitudin id, vulpulate et tortor. Mauris venenatis laoreet elit nec convalis.</p>
+                <div class="article-footer">
+                    <i class="fas fa-calendar-alt"></i><span class="date">26 février 2025</span>
+                    <i class="fas fa-user"></i><span class="author-name">Nom de l'auteur</span>
+                    <button class="read-more-btn">Lire la suite</button>
+                </div>
+                
+            </article>
+            <article class="info-card col-md-6">
+                <h2>Titre de L'article</h2>
+                <p>Lorem ipsum dolor sit amet,consectelur adipiscing elit. Donec lacinia,velit eu porta tincidut,risus turpis consequant nunc, in tempus ex a,semper quam. Phasellus in magna nec purus consequat molestie ut dictum nisl.</p>
+                <p> Donec odio metus, fringilla eget tortor viverra, molestie porttitor augue. Nam vitae ultrices eros. Praesent nisi sapien, pharetra et lobortis viverra,consectelur sit amet est. Suspendisse feugiat egestas juste sit amet interdum. Vivamus neque felis,auctor id sollicitudin id, vulpulate et tortor. Mauris venenatis laoreet elit nec convalis.</p>
+                <div class="article-footer">
+                    <i class="fas fa-calendar-alt"></i><span class="date">26 février 2025</span>
+                    <i class="fas fa-user"></i><span class="author-name">Nom de l'auteur</span>
+                    <button class="read-more-btn">Lire la suite</button>
+                </div>
+            </article>
+        </section>
+        <section class="main-grid-item w-full">
+            <div id="nav-desktop" class="">
+                <div class="search-container full-w">
+                    <div class="search-input full-w" style="display: flex; justify-content: space-between; align-items: center;">
+                        <input class="" type="text" placeholder="Recherche...">
+                        <i class="fas fa-search" style="margin-right: 10px;"></i> 
+                    </div>
+                </div>
+            </div>
+            <div id="cat-card" class="pt-4 ">
+                Catégories:
+                <ul>
+                    <li>Lien vers la catégorie A</li>
+                    <li>Lien vers la catégorie B</li>
+                    <li>Lien vers la catégorie C</li>
+                    <li>Lien vers la catégorie D</li>
+                    <li>Lien vers la catégorie E</li>
+                    <li>Lien vers la catégorie F</li>
+                </ul>
+            </div>
+        </section>
+        <!-- <section class="row">
             <article class="col-md-6">
                 <h2>Titre de L'article</h2>
                 <p>Lorem ipsum dolor sit amet,consectelur adipiscing elit. Donec lacinia,velit eu porta tincidut,risus turpis consequant nunc, in tempus ex a,semper quam. Phasellus in magna nec purus consequat molestie ut dictum nisl.</p>
@@ -62,7 +112,7 @@
                     <button class="read-more-btn">Lire la suite</button>
                 </div>
             </article>
-        </section>
+        </section> -->
     </main>
     
     <footer class="footer text-white text-center p-3">
