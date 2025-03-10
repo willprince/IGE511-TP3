@@ -9,6 +9,12 @@ main{
     margin: 2rem 8rem;
 }
 
+@media (max-width: 768px) {
+    main{
+        margin: 0 !important;
+    }
+}
+
 /* right col go on top when mobile */
 .main-grid-2-cols {
     display: grid;
@@ -20,6 +26,8 @@ main{
     /* reverse item order */
     .main-grid-2-cols {
         grid-template-columns: 1fr; /* 1 colonne */
+        margin-top: 1rem !important;
+
     }
 }
 
@@ -51,10 +59,28 @@ w-full{
     padding: 2rem;
 }
 
+@media (max-width: 768px) {
+    main{
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-grid-item{
+        padding: 0 !important;
+    }
+}
+
 #cat-card{
     margin-top: 1rem;
     background-color: #f8f9fa; /* Gris clair */
     padding:1rem
+}
+
+@media (max-width: 768px) {
+    #cat-card{
+        display: none;
+    }
 }
 
 /* remove margin ul li
@@ -219,5 +245,9 @@ ul{
     .search-container input[type="text"] {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    #nav-desktop-2{
+        display: none;
     }
 }
